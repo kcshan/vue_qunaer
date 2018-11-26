@@ -1,0 +1,37 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="lifecycle"></div>
+  <script>
+    var app = new Vue({
+      el: '#lifecycle',
+      template: '<div>'+
+      '<template v-if="loginType === \'username\'">'+
+        '<label>Username</label>'+
+        '<input placeholder="Enter your username" key="username-input">'+
+      '</template>'+
+      '<template v-else>'+
+        '<label>Email</label>'+
+        '<input placeholder="Enter your email address" key="email-input">'+
+      '</template>'+
+      '<button @click="hideFunc">Toggle login type</button>'+
+      '</div>',
+      data: {
+        loginType: 'username'
+      },
+      methods: {
+        hideFunc: function () {
+          this.loginType = this.loginType === 'username' ? 'email' : 'username'
+        }
+      }
+    })
+  </script>
+</body>
+</html>

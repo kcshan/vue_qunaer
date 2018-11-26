@@ -1,0 +1,56 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <script src="../../node_modules/vue/dist/vue.min.js"></script>
+    </head>
+    <body>
+      <div id="lifecycle"></div>
+      <script>
+        var app = new Vue({
+          el: '#lifecycle',
+          template: '<div>'+
+            '<ul id="example-1">'+
+              '<li v-for="(item, index) in items">'+
+              '{{ parentMessage }}-{{ index }}-{{ item.message }}'+
+              '</li>'+
+            '</ul>'+
+            '<button @click="pushFunc">push</button>'+
+            '<button @click="popFunc">pop</button>'+
+            '<button @click="shiftFunc">shift</button>'+
+            '<button @click="unshiftFunc">unshift</button>'+
+            '<button @click="spliceFunc">splice</button>'+
+            '<input v-model="splice_num_start" />'+
+            '<input v-model="splice_num_end" />'+
+            '<input v-model="splice_v" />'+
+          '</div>',
+          data: {
+            parentMessage: 'Parent',
+            items: [{message: 1}, {message: 2}, {message: 3}],
+            splice_num_start: 0,
+            splice_num_end: 1,
+            splice_v: '',
+          },
+          methods: {
+            pushFunc: function () {
+              this.items.push({message: 3})
+            },
+            popFunc: function () {
+              this.items.pop()
+            },
+            shiftFunc: function () {
+              this.items.shift()
+            },
+            unshiftFunc: function () {
+              this.items.unshift({message: 5})
+            },
+            spliceFunc: function () {
+              this.items.splice(this.splice_num_start, this.splice_num_end, {message: this.splice_v})
+            },
+          }
+        })
+      </script>
+    </body>
+    </html>

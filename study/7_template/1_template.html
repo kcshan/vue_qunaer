@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="lifecycle"></div>
+  <script>
+    var app = new Vue({
+      el: '#lifecycle',
+      template: '<div>{{a}}<span>{{b?1:2}}</span><p>Using v-html directive: <span v-html="rawHtml"></span></p>'+
+        '<button v-bind:disabled="isButtonDisabled">Button</button><p v-if="seen">现在你看到我了</p>'+
+        '<a v-bind:href="url">百度</a><a v-on:click.prevent="doSomething">doSomething</a><div v-text="name"></div>'+
+        '<div v-html="name"></div></div>',
+      data: {
+        a: 'test',
+        b: true,
+        rawHtml: "<span style='color: red;'>this should be red</span>",
+        isButtonDisabled: false,
+        seen: true,
+        url: 'https://www.baidu.com',
+        name: '<h1>dell</h1>'
+      },
+      methods: {
+        doSomething: () => {
+          alert('doSomething')
+        }
+      }
+    })
+  </script>
+</body>
+</html>

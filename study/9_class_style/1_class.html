@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="lifecycle"></div>
+  <script>
+    var app = new Vue({
+      el: '#lifecycle',
+      template: '<div><div :class="{ active: isActive }">isActive</div>'+
+      '<div class="static" :class="{ active: hasError }">text-danger</div>'+
+      '<div :class="[activeClass, errorClass]"></div>'+
+      '<div :class="classObject">classObject</div>'+
+      '<div :class="[activeClass, errorClass]">{{activeClass}} {{errorClass}}</div>'+
+      '<div :class="[isActive ? activeClass : \'\', errorClass]">[isActive ? activeClass : \'\', errorClass]</div>'+
+      '<div :class="[{ active: isActive }, errorClass]">[{ active: isActive }, errorClass]</div>'+
+      '</div>',
+      data: {
+        isActive: true,
+        hasError: false,
+        classObject: {
+          active: true,
+          'text-danger': false
+        },
+        error: null,
+        activeClass: 'active',
+        errorClass: 'text-danger'
+      },
+      computed: {
+        classObject: function () {
+          return {
+            active: this.isActive && !this.error,
+            'text-danger': this.error && this.error.type === 'fatal'
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-model="inputValue">
+    <button v-on:click="submit">提交</button>
+    <div>
+      <ul>
+        <li v-for="item in list">{{item}}</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        list: ['第一课内容', '第二课内容', '第三课内容'],
+        inputValue: ''
+      },
+      methods: {
+        submit: function () {
+          this.list.push(this.inputValue)
+          this.inputValue = ''
+        }
+      }
+    })
+  </script>
+</body>
+</html>

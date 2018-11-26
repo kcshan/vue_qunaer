@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="lifecycle"></div>
+  <script>
+    var app = new Vue({
+      el: '#lifecycle',
+      template: '<div>'+
+      '<div :style="{ color: activeColor, fontSize: fontSize + \'px\' }">activeColor, fontSize</div>'+
+      '<div :style="styleObject">styleObject</div>'+
+      '<div :style="[baseStyles, overridingStyles]">baseStyles, overridingStyles</div>'+
+      '<div :style="{ display: [\'-webkit-box\', \'-ms-flexbox\', \'flex\'] }">display: flex;</div>'+
+      '</div>',
+      data: {
+        activeColor: 'red',
+        fontSize: 16,
+        styleObject: {
+          color: 'red',
+          fontSize: '13px'
+        },
+        baseStyles: {
+          color: 'red',
+          fontSize: '13px'
+        },
+        overridingStyles: {
+          margin: '10px',
+          padding: '10px'
+        }
+      },
+      computed: {
+        classObject: function () {
+          return {
+            active: this.isActive && !this.error,
+            'text-danger': this.error && this.error.type === 'fatal'
+          }
+        }
+      }
+    })
+  </script>
+</body>
+</html>

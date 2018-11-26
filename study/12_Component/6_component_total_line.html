@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+  <div id="lifecycle">
+    <child content="Dell"></child>
+    <child content="Lee"></child>
+  </div>
+  <script>
+    Vue.prototype.bus = new Vue()
+
+    Vue.component('child', {
+      props: {
+        content: {
+          type: String
+        }
+      },
+      data: function () {
+        return {
+          selfContent: this.content
+        }
+      },
+      template: '<div @click="handleChildClick">{{selfContent}}</div>',
+      methods: {
+        handleChildClick: function () {
+          this.bus.$emit('change', this.selfContent)
+        }
+      },
+      mounted() {
+        let _this = this
+        this.bus.$on('change', function (msg) {
+          _this.selfContent = msg
+        })
+      },
+    })
+
+    var app = new Vue({
+      el: '#lifecycle',
+      data: {
+      },
+      methods: {
+        handleClick: function () {
+          alert('handleClick')
+        }
+      }
+    })
+  </script>
+</body>
+</html>
