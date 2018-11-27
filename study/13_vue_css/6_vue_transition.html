@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../node_modules/vue/dist/vue.min.js"></script>
+  <style>
+    .v-enter, .v-leave-to{
+      opacity: 0;
+    }
+    .v-enter-active, .v-leave-active{
+      transition: opacity 1s;
+    }
+  </style>
+</head>
+<body>
+  <div id="lifecycle">
+    <transition-group>
+        <div v-for="item of list" :key="item.id">{{item.title}}</div>
+    </transition-group>
+    <button @click="handleClick">add</button>
+  </div>
+  <script>
+    var count = 0
+    var app = new Vue({
+      el: '#lifecycle',
+      data: {
+        list: []
+      },
+      methods: {
+        handleClick: function () {
+          console.log(this.list)
+          this.list.push({
+            id: count++,
+            title: 'hello world'
+          })
+        },
+      }
+    })
+  </script>
+</body>
+</html>
