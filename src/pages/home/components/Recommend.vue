@@ -40,18 +40,6 @@ export default {
           imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/ed/ed3fe7a5e8616aeda3.img.jpg_200x200_4794c1a7.jpg',
           title: '杭州江和美海洋公园',
           desc: '浪漫杭州首站，浪漫的海洋主题公园'
-        },
-        {
-          id: '004',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/ed/ed3fe7a5e8616aeda3.img.jpg_200x200_4794c1a7.jpg',
-          title: '杭州江和美海洋公园',
-          desc: '浪漫杭州首站，浪漫的海洋主题公园'
-        },
-        {
-          id: '005',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1705/ed/ed3fe7a5e8616aeda3.img.jpg_200x200_4794c1a7.jpg',
-          title: '杭州江和美海洋公园',
-          desc: '浪漫杭州首站，浪漫的海洋主题公园'
         }
       ]
     }
