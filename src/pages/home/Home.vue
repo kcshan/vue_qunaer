@@ -1,25 +1,19 @@
 <template>
   <div>
-    <div class="home">
-      {{msg}}
-    </div>
+    <home-header></home-header>
   </div>
 </template>
 
 <script>
+import HomeHeader from './components/Header'
 export default {
   name: 'Home',
-  data () {
-    return {
-      msg: 'Home'
-    }
+  components: {
+    HomeHeader
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.home{
-  font-size: 20px;
-}
 </style>
