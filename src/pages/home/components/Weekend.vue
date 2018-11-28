@@ -18,32 +18,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  // props: {
-  //   weekendList: Array
-  // },
-  data: function () {
-    return {
-      weekendList: [
-        {
-          id: '001',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg',
-          title: '承载杭城的历史之地',
-          desc: '饱经沧桑的地方诉述着这座城的段段衷肠'
-        },
-        {
-          id: '002',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg',
-          title: '承载杭城的历史之地',
-          desc: '饱经沧桑的地方诉述着这座城的段段衷肠'
-        },
-        {
-          id: '003',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg',
-          title: '承载杭城的历史之地',
-          desc: '饱经沧桑的地方诉述着这座城的段段衷肠'
-        }
-      ]
-    }
+  props: {
+    weekendList: Array
   }
 }
 </script>
