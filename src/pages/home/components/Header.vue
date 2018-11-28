@@ -22,7 +22,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus" scoped>
-  @import '../../../assets/styles/varibles.styl'
+  @import '~styles/varibles.styl'
   .header
     display: flex
     line-height: $headerHeight
