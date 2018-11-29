@@ -8,6 +8,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import 'babel-polyfill'
 import 'styles/reset.css'
 import 'styles/border.css'
 import 'styles/iconfont.css'
