@@ -3,6 +3,7 @@
 > A Vue.js project
 
 预览地址 [去哪儿](https://kcshan.github.io/vue_qunaer/dist/index.html#/detail/001)
+
 ## Build Setup
 
 ``` bash
