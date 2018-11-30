@@ -1,0 +1,103 @@
+{
+  "ret": true,
+  "data": {
+    "city": "杭州",
+    "swiperList": [
+      {
+        "id": "001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/7c/8e5c4ab8ee8b7402.jpg_750x200_dd7a38dd.jpg"
+      },
+      {
+        "id": "002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1811/4d/6706bf772c05ce02.jpg_750x200_773e75f0.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游"
+      },
+      {
+        "id": "003",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "杭州必游"
+      },
+      {
+        "id": "004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "动植物园"
+      },
+      {
+        "id": "005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "006",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游"
+      },
+      {
+        "id": "007",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "杭州必游"
+      },
+      {
+        "id": "008",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "009",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "001",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1705/ed/ed3fe7a5e8616aeda3.img.jpg_200x200_4794c1a7.jpg",
+        "title": "杭州江和美海洋公园",
+        "desc": "浪漫杭州首站，浪漫的海洋主题公园"
+      },
+      {
+        "id": "002",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1705/ed/ed3fe7a5e8616aeda3.img.jpg_200x200_4794c1a7.jpg",
+        "title": "杭州江和美海洋公园",
+        "desc": "浪漫杭州首站，浪漫的海洋主题公园"
+      },
+      {
+        "id": "003",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1705/ed/ed3fe7a5e8616aeda3.img.jpg_200x200_4794c1a7.jpg",
+        "title": "杭州江和美海洋公园",
+        "desc": "浪漫杭州首站，浪漫的海洋主题公园"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "001",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg",
+        "title": "承载杭城的历史之地",
+        "desc": "饱经沧桑的地方诉述着这座城的段段衷肠"
+      },
+      {
+        "id": "002",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg",
+        "title": "承载杭城的历史之地",
+        "desc": "饱经沧桑的地方诉述着这座城的段段衷肠"
+      },
+      {
+        "id": "003",
+        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9f/7d45cc38259e0.jpg_r_640x214_156f4299.jpg",
+        "title": "承载杭城的历史之地",
+        "desc": "饱经沧桑的地方诉述着这座城的段段衷肠"
+      }
+    ]
+  }
+}
