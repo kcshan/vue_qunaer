@@ -1,4 +1,4 @@
-# vue_qunaer
+# vue_qunar
 
 > A Vue.js project
 
